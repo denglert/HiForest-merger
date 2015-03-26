@@ -41,15 +41,6 @@ else
 	exit 1
 fi
 
-
-# Loading CMSSW
-
-cd $environmentDIR
-echo -e "Loading CMSSW environment from $(pwd)"
-#eval `scramv1 runtime -sh`
-
-cd -
-
 # Merging
 $mergescriptPATH "./unmerged/*.root" $outputfilename
 
@@ -85,3 +76,4 @@ echo -e "Directory: $(pwd)"
 echo -e "Directory contents:\n $(ls -l)"
 
 echo -e "FINAL: Merge job completed for $outputfilename "
+	echo $inputfilelistPATH

@@ -24,11 +24,10 @@ outputfilebase = pPb2013_HM_PromptReco-v1_HiForest_pPb_run_210676-211256
 compression = 5
 queue = 1nd
 
-environmentDIR=/afs/cern.ch/work/d/denglert/public/projects/PKPCorrelation_SLC6/CMSSW_5_3_20/src/denglert/PKPCorrelationAna
 mergescriptPATH=/afs/cern.ch/work/d/denglert/public/util/hiForestMerging/lxbatch/mergeForest.exe
 
 # Export Makefile variables to shell environment
-export jobtag inputlist outputDIR outputfilebase compression queue environmentDIR mergescriptPATH
+export jobtag inputlist outputDIR outputfilebase compression queue mergescriptPATH
 
 ############################################################
 all :
